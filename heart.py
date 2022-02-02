@@ -1,20 +1,22 @@
-from turtle import *
-import time
+t.pensize(pensize)
+t.up()
+t.goto(starting_x,starting_y)       #going to specified position efault is (00,00)
+t.down()
+t.hideturtle()
+t.color(border_color,fill_color)        #setting given color
 
-hideturtle()
-color('black','red')
+t.begin_fill()          #filling given color
 
-begin_fill()
+t.left(45)
+t.forward(100 * size) 
+t.circle(50*size,180)       #first curve
 
-left(45)
-forward(100)
-circle(50,180)
+t.right(90)
+t.circle(50*size,180)       #second curve
 
-right(90)
-circle(50,180)
-forward(100)
+t.forward(100*size)
 
 
-end_fill()
+t.end_fill()            #filling complete
 
-
+t.done          #drawing complte
